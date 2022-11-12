@@ -12,6 +12,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <skip.surefire.tests>true</skip.surefire.tests>
     </properties>
 
     <dependencies>
@@ -36,11 +37,6 @@
                         <version>3.0.0-M7</version>
                     </dependency>
                 </dependencies>
-                <configuration>
-                    <!-- skips surefire tests without skipping failsafe tests.
-                             Property value seems to magically default to false -->
-                    <skipTests>${skip.surefire.tests}</skipTests>
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -61,6 +57,12 @@
                         <version>3.0.0-M7</version>
                     </dependency>
                 </dependencies>
+                <configuration>
+                    <shutdown>kill</shutdown>
+                    <!-- skips surefire tests without skipping failsafe tests.
+                             Property value seems to magically default to false -->
+                    <skipTests>${skip.surefire.tests}</skipTests>
+                </configuration>
             </plugin>
         </plugins>
     </build>
