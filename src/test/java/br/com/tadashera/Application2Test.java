@@ -1,4 +1,4 @@
-package com.br.tadashera.mavenfailsafe;
+package br.com.tadashera;
 
 import org.junit.Test;
 
@@ -9,6 +9,6 @@ public class Application2Test {
     @Test
     public void shouldGetName() {
         Application2 application = new Application2();
-        assertEquals("com.br.tadashera.mavenfailsafe.Application2", application.getName());
+        assertEquals("br.com.tadashera.Application2", application.getName());
     }
 }

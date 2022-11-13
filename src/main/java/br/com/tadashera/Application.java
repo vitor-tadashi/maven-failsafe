@@ -1,4 +1,4 @@
-package com.br.tadashera.mavenfailsafe;
+package br.com.tadashera;
 
 public class Application {
     public static void main(String[] args) throws InterruptedException {
