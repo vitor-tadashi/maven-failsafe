@@ -16,13 +16,13 @@ mvn clean test
 ```
 
 ### Running integration tests with Failsafe
-#### Running and checking tests separately
+Running and checking tests separately
 ```
 mvn failsafe:integration-test
 mvn failsafe:verify
 ```
 
-#### Running in one command
+Running in one command
 ```
 mvn verify
 ```
@@ -32,7 +32,7 @@ mvn verify
 mvn verify -Dskip.surefire.test=false
 ```
 
-## Running with OpenClover (for code coverage report)
+### Running with OpenClover (for code coverage report)
 Running unit tests
 ```
 mvn clean clover:setup test  
@@ -53,6 +53,6 @@ Running in one command
 mvn clean clover:setup verify -Dskip.surefire.test=false clover:aggregate clover:clover
 ```
 
-## Code coverage report
+### Code coverage report
 The code coverage report will be generated inside
 `./target/site/clover/dashboard.html`
