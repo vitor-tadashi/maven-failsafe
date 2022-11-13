@@ -45,12 +45,12 @@ mvn clover:setup failsafe:integration-test failsafe:verify
 
 Generate code coverage
 ```
-mvn clover:aggregate clover:clover
+mvn clover:aggregate clover:save-history clover:clover
 ```
 
 Running in one command
 ```
-mvn clean clover:setup verify -Dskip.surefire.test=false clover:aggregate clover:clover
+mvn clean clover:setup verify -Dskip.surefire.test=false clover:aggregate clover:save-history clover:clover
 ```
 
 ### Code coverage report
