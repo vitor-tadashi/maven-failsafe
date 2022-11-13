@@ -2,6 +2,7 @@
 
 
 [![Actions Status](https://github.com/vitor-tadashi/maven-test-surefire-failsafe-openclover/workflows/Continuous%20Integration/badge.svg)](https://github.com/vitor-tadashi/maven-test-surefire-failsafe-openclover/actions)
+[![Actions Status](https://github.com/vitor-tadashi/maven-test-surefire-failsafe-openclover/workflows/Code%Scanning/badge.svg)](https://github.com/vitor-tadashi/maven-test-surefire-failsafe-openclover/actions)
 
 Too many articles about Surefire and Failsafe, 
 and most people still don't know why Surefire and Failsafe are for
