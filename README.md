@@ -33,22 +33,22 @@ mvn verify -Dskip.surefire.test=false
 ```
 
 ## Running with OpenClover (for code coverage report)
-#### Running unit tests
+Running unit tests
 ```
 mvn clean clover:setup test  
 ```
 
-#### Running integration tests
+Running integration tests
 ```
 mvn clover:setup failsafe:integration-test failsafe:verify
 ```
 
-#### Generate code coverage
+Generate code coverage
 ```
 mvn clover:aggregate clover:clover
 ```
 
-#### Running in one command
+Running in one command
 ```
 mvn clean clover:setup verify -Dskip.surefire.test=false clover:aggregate clover:clover
 ```
